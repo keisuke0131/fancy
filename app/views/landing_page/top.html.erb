@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-logo">
+      <%= image_tag 'Fancy_logo_white.png'%>
+    </div>
+    <nav class="header-nav">
+      <ul>
+        <% if !logged_in? %>
+          <li><%= link_to "ログイン" , login_path%></li>
+        <% else %>
+          <li><%= link_to "ログアウト" , logout_path , method: :delete %></li>
+        <% end %>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="top-wrapper">
+      <%= image_tag 'lp1.png' %>
+      <div class="top-container">
+        <%= link_to new_user_path do%>
+          <button class="btn-square-shadow">新規登録はこちら！</button>
+        <% end %>
+      </div>
+    </div>
+    <div class="about-wrapper">
+      <div class="about-container">
+        <h2>彼女を作ることは誰でもできる</h2>
+        <p>彼女を作ることなんて誰でもできます。</p>
+        <p>これは断言できます。</p>
+        <p>彼女を作るのが一部の人しかできないほど難しいことであれば、</p>
+        <p>人類は絶滅していると思いませんか？</p>
+        <p>イケメンであったり、生まれ持ったセンスなどは一切無くて大丈夫です！</p>
+        <p>彼女を作るということは、</p>
+        <p>ノウハウさえ理解すれば誰でもできる再現性の高いものなのです！</p>
+        <%= link_to new_user_path do%>
+          <button class="btn-square-shadow">新規登録はこちら！</button>
+        <% end %>
+      </div>
+      <div class="about-container">
+        <h2>必要なノウハウを徹底解説！</h2>
+        <p>Fancyでは彼女を作るのに必要なノウハウを</p>
+        <p>徹底解説しております。</p>
+        <p>Fancyで公開しているノウハウを理解し、実際に行動することで、</p>
+        <p>最短経路で彼女を作るというゴールに辿りつけます。</p>
+        <%= link_to new_user_path do%>
+          <button class="btn-square-shadow">新規登録はこちら！</button>
+        <% end %>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <small>
+      <p>&copy 2020 Fancy</p>
+    </small>
+  </footer>
+</body>
+
+</html>

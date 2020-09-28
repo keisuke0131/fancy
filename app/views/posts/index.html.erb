@@ -1,0 +1,25 @@
+<header class="logged">
+  <div class="header-icon">
+
+  </div>
+  <div class="login-btn">
+    <%= link_to "ログアウト" , logout_path , method: :delete %>
+  </div>
+</header>
+
+<div class="posts-index-wrapper">
+  <div class="posts-index-container">
+    <% @posts.each do |post| %>
+      <div class="posts">
+        <%= link_to post do%>
+        <div class="posts-index-image">
+          <%= image_tag 'thumbnail.png'%>
+        </div>
+        <div class="posts-index-title">
+          <h2><%= link_to post.title, post%></h2>
+        </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>

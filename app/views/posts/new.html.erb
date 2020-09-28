@@ -1,0 +1,16 @@
+<div class="posts-new-wrapper">
+  <div class="posts-new-container">
+    
+    <%= form_with(model: @post, local: true) do |f| %>
+
+    <%= f.label :tilte, "タイトル" %>
+    <%= f.text_field :title%>
+
+    <div class="edit-field">
+      <%= f.label :content, "エディタ" %>
+      <%= f.text_area:content %>
+    </div>
+    <%= f.submit "投稿する"%>
+    <% end %>
+  </div>
+</div>
