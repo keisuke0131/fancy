@@ -1,5 +1,6 @@
 .users-new-wrapper{
   min-height:100vh;
+  margin:auto;
   background:rgb(253, 253, 253);
   img{
     display: block;
@@ -78,16 +79,26 @@
 }
 
 .users-setting-wrapper{
+  margin:auto;
   .users-setting-container{
     ul{
       margin:25px 0 0 0;
       padding:0 10px;
       li{
-        padding:15px 7px;
+        position: relative;
+        padding:15px 12px;
         border-bottom:1px solid rgb(143, 143, 143);
-        font-size:1.15em;
+        font-weight:500;
+        font-size:1.1em;
         &:first-child{
           border-top:1px solid rgb(143, 143, 143);
+        }
+        span{
+          position: absolute;
+          top:8px;
+          right:30px;
+          color:rgb(168, 168, 168);
+          font-size:2.2em;
         }
       }
     }

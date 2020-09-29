@@ -1,6 +1,7 @@
 header.logged{
   position:static;
-  height:45px;
+  margin:auto;
+  height:50px;
   background:rgb(255, 255, 255);
   border-bottom:1px solid rgb(206, 206, 206);
   .header-icon{
@@ -8,11 +9,12 @@ header.logged{
     padding:10px 7px;
     text-align: center;
     img{
-      width:60px;
+      width:70px;
     }
     p{
+      padding:3px 0 0 0;
       color:black;
-      font-size:1.2em;
+      font-size:1.4em;
       font-weight:500;
     }
   }
@@ -31,6 +33,7 @@ header.logged{
 }
 
 .posts-new-wrapper{
+  margin:auto;
   .posts-new-container{
     width:70%;
     margin:auto;
@@ -56,6 +59,7 @@ header.logged{
 }
 
 .posts-index-wrapper{
+  margin:auto;
   background:rgb(248, 248, 248);
   .posts-index-container{
     width:85vw;
@@ -90,6 +94,7 @@ header.logged{
 }
 
 .posts-show-wrapper{
+  margin:auto;
   background:rgb(245, 245, 245);
   article{
     section{
@@ -102,7 +107,7 @@ header.logged{
       background:rgb(6, 6, 114);
       color:white;
       border-radius: 5px;
-      font-size:23px;
+      font-size:24px;
       font-weight:bold;
     }
     h2{
@@ -111,14 +116,21 @@ header.logged{
       background:rgb(75, 75, 161);
       color:white;
       border-radius: 5px;
-      font-size:20px;
+      font-size:22px;
       font-weight:bold;
+    }
+    h3{
+      padding:12px 13px;
+      background:rgb(211, 211, 243);
+      font-weight:500;
+      font-size:20px;
+      border-radius: 5px;
     }
     ul{
       margin:10px 0;
-      li{
-        list-style: inside;
-      }
+    }
+    li{
+      list-style: inside;
     }
     p{
       padding:8px 7px;
@@ -133,7 +145,7 @@ header.logged{
 }
 
 nav.bottom-nav{
-  
+  margin:auto;
   text-align: center;
   ul{
     display: flex;
