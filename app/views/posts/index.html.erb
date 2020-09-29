@@ -1,10 +1,12 @@
 <header class="logged">
   <div class="header-icon">
-
+    <%= image_tag 'Fancy_logo_black.png'%>
   </div>
+  <!--
   <div class="login-btn">
     <%= link_to "ログアウト" , logout_path , method: :delete %>
   </div>
+-->
 </header>
 
 <div class="posts-index-wrapper">
@@ -17,9 +19,14 @@
         </div>
         <div class="posts-index-title">
           <h2><%= link_to post.title, post%></h2>
+          <div id="like-btn-<%= post.id %>" class="like-btn">
+            <%= render 'likes/like', post: post %>
+         </div>
         </div>
         <% end %>
       </div>
     <% end %>
   </div>
 </div>
+
+<%= render 'shared/bottom_nav' %>

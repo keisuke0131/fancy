@@ -1,7 +1,16 @@
 header.logged{
   position:static;
-  height:40px;
-  background:rgb(231, 231, 231);
+  height:45px;
+  background:rgb(255, 255, 255);
+  border-bottom:1px solid rgb(206, 206, 206);
+  .header-icon{
+    width:100%;
+    padding:10px 7px;
+    text-align: center;
+    img{
+      width:60px;
+    }
+  }
   .login-btn{
     display: flex;
     justify-content: flex-end;
@@ -42,10 +51,10 @@ header.logged{
 }
 
 .posts-index-wrapper{
-  background:rgb(253, 253, 253);
+  background:rgb(248, 248, 248);
   .posts-index-container{
     width:85vw;
-    margin:40px auto;
+    margin:20px auto 80px auto;
     .posts{
       margin:20px 0;
       box-shadow: 5px 3px 15px rgb(207, 207, 207);
@@ -55,20 +64,27 @@ header.logged{
         }
       }
       .posts-index-title{
+        display: flex;
+        position: relative;
         margin: 0;
+        background:rgb(255, 255, 255);
       }
       h2{
         padding:18px 20px;
-        background:rgb(255, 255, 255);
         color:rgb(48, 48, 48);
         font-size:5vw;
         font-weight:bold;
+      }
+      .like-btn{
+        position: absolute;
+        top:16.65px;
+        right:10px;   
       }
     }
   }
 }
 
-.post-show-wrapper{
+.posts-show-wrapper{
   background:rgb(245, 245, 245);
   article{
     section{
@@ -93,6 +109,12 @@ header.logged{
       font-size:20px;
       font-weight:bold;
     }
+    ul{
+      margin:10px 0;
+      li{
+        list-style: inside;
+      }
+    }
     p{
       padding:8px 7px;
       font-size:18px;
@@ -101,6 +123,27 @@ header.logged{
     span.under-yellow{
       background: linear-gradient(transparent 60%, #e5f323 0%);
       font-weight:bold;
+    }
+  }
+}
+
+nav.bottom-nav{
+  
+  text-align: center;
+  ul{
+    display: flex;
+    position:fixed;
+    z-index:2;
+    background:#fff;
+    bottom:0;
+    width:100vw;
+    li{
+      width:33.33333%;
+      padding:8px 10px;
+      border-top:1px solid rgb(206, 206, 206);
+    }
+    p{
+      font-size:0.6em;
     }
   }
 }

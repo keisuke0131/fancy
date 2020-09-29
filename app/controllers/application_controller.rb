@@ -18,6 +18,12 @@ class ApplicationController < ActionController::Base
         redirect_to root_path
       end
     end
-
-
+  
+  private
+    
+    def admin_check
+      if !current_user.admin 
+        redirect_to root_path
+      end
+    end
 end
