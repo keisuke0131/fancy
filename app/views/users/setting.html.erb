@@ -1,0 +1,18 @@
+<header class="logged">
+  <div class="header-icon">
+    <p>設定</p>
+  </div>
+</header>
+
+<div class="users-setting-wrapper">
+  <div class="users-setting-container">
+    <ul>
+      <li>メールアドレス変更</li>
+      <li>パスワード変更</li>
+      <li>プライバシーポリシー</li>
+      <li><%= link_to "ログアウト" , logout_path , method: :delete %></li>
+    </ul>
+  </div>
+</div>
+
+<%= render 'shared/bottom_nav' %>

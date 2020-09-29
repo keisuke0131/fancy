@@ -10,4 +10,5 @@ Rails.application.routes.draw do
     post 'add' ,to: 'likes#create'
     delete '/add' ,to: 'likes#destroy'
   end
+  get '/setting', to: 'users#setting'
 end

@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  
+  before_action :require_login , only:[:index,:show,:edit,:update,:destroy,:setting] 
   def index
   end
 
@@ -27,6 +27,9 @@ class UsersController < ApplicationController
   end
 
   def destroy
+  end
+
+  def setting
   end
 
   private

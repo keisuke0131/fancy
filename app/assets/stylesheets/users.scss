@@ -76,3 +76,20 @@
     }
   }
 }
+
+.users-setting-wrapper{
+  .users-setting-container{
+    ul{
+      margin:25px 0 0 0;
+      padding:0 10px;
+      li{
+        padding:15px 7px;
+        border-bottom:1px solid rgb(143, 143, 143);
+        font-size:1.15em;
+        &:first-child{
+          border-top:1px solid rgb(143, 143, 143);
+        }
+      }
+    }
+  }
+}
