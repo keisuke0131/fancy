@@ -2,8 +2,9 @@ header.logged{
   position:static;
   margin:auto;
   height:50px;
-  background:rgb(255, 255, 255);
   border-bottom:1px solid rgb(206, 206, 206);
+  box-shadow: 0px 1px 1px 0px rgb(240, 240, 240);
+  background:rgb(255, 255, 255);
   .header-icon{
     width:100%;
     padding:10px 7px;
@@ -146,14 +147,16 @@ header.logged{
 
 nav.bottom-nav{
   margin:auto;
+  
   text-align: center;
   ul{
     display: flex;
     position:fixed;
-    z-index:2;
-    background:#fff;
     bottom:0;
+    z-index:2;
     width:100vw;
+    box-shadow: 1px 1px 1px 1px rgb(199, 199, 199);
+    background:#fff;
     li{
       width:33.33333%;
       padding:8px 10px;
