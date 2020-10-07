@@ -1,0 +1,17 @@
+<div class="users-new-wrapper">
+  <%= image_tag 'Fancy_logo_black.png'%>
+  <div class="users-new-container">
+    <%= form_with(url: change_password_update_path,local: true) do |f| %> 
+    <div class="users-new-title">
+      <h1>パスワード変更</h1>
+    </div>
+      <%= render 'shared/error_messages' %>
+      <%= f.password_field :current_password, class: 'form-control', placeholder: "現在のパスワード" %>
+      <%= f.password_field :password, class: 'form-control', placeholder: "新しいパスワード" %>
+      <%= f.password_field :password_confirmation , class: 'form-control', placeholder: "新しいパスワード(確認)" %>
+      <%= f.submit "変更", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
+
+<%= render 'shared/bottom_nav' %>
