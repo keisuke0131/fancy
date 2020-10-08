@@ -15,6 +15,7 @@ gem 'bcrypt'
 gem 'rails-i18n'
 gem "jquery-rails"
 gem "aws-sdk-s3", require: false
+gem 'mini_magick', '~> 4.8'
 
 group :development, :test do
   gem 'sqlite3', '~> 1.4'

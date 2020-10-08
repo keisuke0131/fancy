@@ -1,3 +1,7 @@
 <!--<%= sanitize(@post.content) %>-->
+<div class="posts-show-thumbnail">
+  <%= image_tag @post.image %>
+  <h1><%= @post.title%></h1>
+</div>
 <%= @post.content.html_safe %>
 <%= render 'shared/bottom_nav' %>

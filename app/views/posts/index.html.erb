@@ -1,27 +1,30 @@
-<%= render 'shared/header_logged' %>
+<div class="pc-wrap">
+  <%= render 'shared/header_logged' %>
 
-<div class="posts-index-wrapper">
-  <div class="posts-index-container">
-    <% @posts.each do |post| %>
-      <div class="posts">
-        <%= link_to post do%>
-        <div class="posts-index-image">
-          <% if post.image.attached? %>
-            <%= image_tag post.image %>
-          <% else %>
-            <%= image_tag 'thumbnail.png' %>
+  <div class="posts-index-wrapper">
+    <div class="posts-index-container">
+      <% @posts.each do |post| %>
+        <div class="posts">
+          <%= link_to post do%>
+          <div class="posts-index-image">
+            <% if post.image.attached? %>
+              <%= image_tag post.image %>
+            <% else %>
+              <%= image_tag 'thumbnail.png' %>
+            <% end %>
+          </div>
+          <div class="posts-index-title">
+            <h2><%= link_to post.title, post%></h2>
+            <div id="like-btn-<%= post.id %>" class="like-btn">
+              <%= render 'likes/like', post: post %>
+          </div>
+          </div>
           <% end %>
         </div>
-        <div class="posts-index-title">
-          <h2><%= link_to post.title, post%></h2>
-          <div id="like-btn-<%= post.id %>" class="like-btn">
-            <%= render 'likes/like', post: post %>
-         </div>
-        </div>
-        <% end %>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
   </div>
+
+  <%= render 'shared/bottom_nav' %>
 </div>
 
-<%= render 'shared/bottom_nav' %>
