@@ -14,6 +14,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'bcrypt'
 gem 'rails-i18n'
 gem "jquery-rails"
+gem "aws-sdk-s3", require: false
 
 group :development, :test do
   gem 'sqlite3', '~> 1.4'
