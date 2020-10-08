@@ -28,8 +28,8 @@
       .users-new-title{
         padding:5px 0;
         h1{
-          font-size:6vw;
           font-weight: 500;
+          font-size:6vw;
         }
       }
       input{
@@ -63,17 +63,17 @@
       }
       input[type="submit"]{
         position: relative;
-        text-align: center;
-        text-decoration: none;
-        font-size: 18px;
-        font-weight: bold;
-        color: #FFF;
-        -webkit-transition: none;
-        transition: none;
         padding: 17px 35px;
-        background:rgb(22, 39, 94);
+        transition: none;
+        -webkit-transition: none;
         border-radius: 5px;
         box-shadow: 0 6px 0 rgb(12, 3, 134);
+        background:rgb(22, 39, 94);
+        color: #FFF;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
         &:active {        
           top:6px;
           box-shadow: none;
