@@ -7,7 +7,11 @@
         <div class="posts">
           <%= link_to post do%>
           <div class="posts-index-image">
-            <%= image_tag 'thumbnail.png'%>
+            <% if post.image.attached? %>
+              <%= image_tag post.image %>
+            <% else %>
+              <%= image_tag 'thumbnail.png' %>
+            <% end %>
           </div>
           <div class="posts-index-title">
             <h2><%= link_to post.title, post%></h2>
