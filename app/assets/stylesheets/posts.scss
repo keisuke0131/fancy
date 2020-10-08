@@ -84,6 +84,9 @@ header.logged{
         color:rgb(48, 48, 48);
         font-size:5vw;
         font-weight:bold;
+        @media screen and (min-width: 500px) {
+          font-size: 30px;
+        }
       }
       .like-btn{
         position: absolute;
@@ -96,6 +99,7 @@ header.logged{
 
 .posts-show-thumbnail{
   position: relative;
+  margin:auto;
   h1{
     position: absolute;
     bottom:15px;
@@ -104,6 +108,9 @@ header.logged{
     color:rgb(46, 46, 46);
     font-weight:bold;
     font-size:5vw;
+    @media screen and (min-width: 500px) {
+      font-size: 25px;
+    }
   }
   img{
     width:100vw;
@@ -121,7 +128,7 @@ header.logged{
       padding:20px 0;
     }
     h2{
-      padding:7px 0;
+      padding:7px 4px;
       border-top:2px solid #000;
       border-bottom:2px solid #000;
       color:rgb(37, 37, 37);
