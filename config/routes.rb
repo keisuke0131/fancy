@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'contacts/new', to: 'contacts#new'
+  post 'contacts/create', to: 'contacts#create'
+  get 'contacts/thanx', to: 'contacts#thanx'
+  
   root 'landing_page#top'
   resources :users
   resources :posts

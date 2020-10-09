@@ -1,0 +1,14 @@
+<div class="users-new-wrapper">
+  <%= image_tag 'Fancy_logo_black.png'%>
+  <div class="users-new-container">
+    <%= form_with(url:contacts_create_path,local: true) do |f| %>
+    <div class="users-new-title">
+      <h1>お問い合わせ</h1>
+    </div>
+      <%= f.text_field :name, placeholder: "氏名" %>
+      <%= f.email_field :email, placeholder: "メールアドレス" %>
+      <%= f.text_area :message, placeholder: "お問い合わせ内容" %>
+      <%= f.submit "送信する", class: "btn-square-shadow" %>
+    <% end %>
+  </div>
+</div>
