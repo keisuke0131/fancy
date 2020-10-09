@@ -1,7 +1,7 @@
 <div class="users-new-wrapper">
   <%= image_tag 'Fancy_logo_black.png'%>
   <div class="users-new-container">
-    <%= form_with(url:contacts_create_path,local: true) do |f| %>
+    <%= form_with(model: @contact,url:contacts_create_path,local: true) do |f| %>
     <div class="users-new-title">
       <h1>お問い合わせ</h1>
     </div>
