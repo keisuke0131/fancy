@@ -7,19 +7,23 @@
 
 header{
   display: flex;
-  position: absolute;
+  position: relative;
   margin:auto;
   background-color:rgba(0,0,0,0);
   box-sizing: border-box;
   color:white;
   font-weight:500;
   .header-logo{
-    padding:10px;
+    position: absolute;
+    top:10px;
+    left:10px;
     img{
-      width:80px;
+      width:90px;
     }
   }
   .header-nav{
+    position: absolute;
+    right:10px;
     width:calc(100vw - 100px);
     ul{
       display: flex;
