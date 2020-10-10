@@ -13,6 +13,9 @@ class ContactsController < ApplicationController
     end
   end
 
+  def privacy_policy
+  end
+
   def thanx
   end
 

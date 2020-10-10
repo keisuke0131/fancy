@@ -7,20 +7,26 @@
 <div class="users-setting-wrapper">
   <div class="users-setting-container">
     <ul>
-      <li>
-        <%= link_to "メールアドレス変更" , change_email_edit_path(current_user.id) %>
-        <span class="material-icons">navigate_next</span>
-      </li>
-      <li>
-        <%= link_to "パスワード変更" , change_password_edit_path(current_user.id) %>
-        <span class="material-icons">navigate_next</span>
-      </li>
+      <%= link_to change_email_edit_path(current_user.id) do %>
+        <li>
+          メールアドレス変更
+          <span class="material-icons">navigate_next</span>
+        </li>
+      <% end %>
+      <%= link_to change_password_edit_path(current_user.id) do %>
+        <li>
+          パスワード変更
+          <span class="material-icons">navigate_next</span>
+        </li>
+      <% end %>
     </ul>
     <ul>
-      <li>
-        プライバシーポリシー
-        <span class="material-icons">navigate_next</span>
-      </li>
+      <%= link_to privacy_policy_path do %>
+        <li>
+          プライバシーポリシー
+          <span class="material-icons">navigate_next</span>
+        </li>
+      <% end %>
       <li>
         特商法表記
         <span class="material-icons">navigate_next</span>
@@ -29,17 +35,21 @@
         よくあるご質問
         <span class="material-icons">navigate_next</span>
       </li>
-      <li>
-        <%= link_to "お問い合わせ" , contacts_new_path %>
-        <span class="material-icons">navigate_next</span>
-      </li>
+      <%= link_to contacts_path do %>
+        <li>
+          お問い合わせ
+          <span class="material-icons">navigate_next</span>
+        </li>
+      <% end %>
 
     </ul>
     <ul>
-      <li>
-        <%= link_to "ログアウト" , logout_path , class: "logout-btn", method: :delete %>
-        <span class="material-icons">navigate_next</span>
-      </li>
+      <%= link_to logout_path , class: "logout-btn", method: :delete do %>
+        <li>
+          ログアウト
+          <span class="material-icons">navigate_next</span>
+        </li>
+      <% end %>
     </ul>
   </div>
 </div>
