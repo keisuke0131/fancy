@@ -57,13 +57,12 @@
       h1{
         padding:60px 20px;
         font-weight:bold;
-        font-size:8vw;
+        font-size:7.5vw;
         @media screen and (min-width: 500px) {
           font-size: 40px;
         }
       }
       p,a{
-        width:80%;
         margin:0 auto;
         text-align: left;
         font-weight:600;
@@ -74,7 +73,6 @@
       }
     }
     .privacy-policy-section{
-      width:80%;
       margin:50px auto;
       text-align: left;
       font-weight:600;
