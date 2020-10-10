@@ -1,6 +1,10 @@
 <!--<%= sanitize(@post.content) %>-->
 <div class="posts-show-thumbnail">
-  <%= image_tag @post.image %>
+  <% if post.image.attached? %>
+    <%= image_tag post.image %>
+  <% else %>
+    <%= image_tag 'thumbnail.png' %>
+  <% end %>
   <h1><%= @post.title%></h1>
 </div>
 <%= @post.content.html_safe %>
