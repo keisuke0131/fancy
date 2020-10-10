@@ -1,0 +1,44 @@
+.thankx-wrapper{
+  margin:auto;
+  .thanx-title{
+    text-align: center;
+    h1{
+      padding:60px 20px;
+      font-weight:bold;
+      font-size:8vw;
+      @media screen and (min-width: 500px) {
+        font-size: 40px;
+      }
+    }
+  }
+  .thanx-content{
+    width:80%;
+    margin:0 auto;
+    text-align: left;
+    font-weight:600;
+    font-size:4vw;
+    @media screen and (min-width: 500px) {
+      font-size: 20px;
+    }
+  }
+  .home-button{
+    position: relative;
+    width:170px;
+    margin:60px auto;
+    padding: 17px 35px;
+    transition: none;
+    -webkit-transition: none;
+    border-radius: 5px;
+    box-shadow: 0 6px 0 rgb(12, 3, 134);
+    background:rgb(22, 39, 94);
+    color: #FFF;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    &:active {        
+      top:6px;
+      box-shadow: none;
+    }
+  }
+}
