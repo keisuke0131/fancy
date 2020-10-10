@@ -16,11 +16,11 @@ header{
   .header-logo{
     padding:10px;
     img{
-      width:70px;
+      width:80px;
     }
   }
   .header-nav{
-    width:calc(100vw - 90px);
+    width:calc(100vw - 100px);
     ul{
       display: flex;
       justify-content: flex-end;
