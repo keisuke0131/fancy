@@ -158,10 +158,9 @@ header.logged{
       font-weight:600;
       font-size:18px;
     }
-    span.under-yellow{
-      background: linear-gradient(transparent 60%, #e5f323 0%);
-      font-weight:bold;
-    }
+    .marker-under {
+      background: linear-gradient(transparent 60%, #ffff00 0%);
+      }
   }
 }
 
