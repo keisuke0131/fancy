@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   get 'contacts', to: 'contacts#new'
   post 'contacts', to: 'contacts#create'
   get 'contacts/thanx', to: 'contacts#thanx'
-  get 'privacy-policy', to: 'contacts#privacy_policy' 
+  get 'privacy-policy', to: 'contacts#privacy_policy'
+  get '/question', to: 'contacts#question' 
 
   root 'landing_page#top'
   resources :users
