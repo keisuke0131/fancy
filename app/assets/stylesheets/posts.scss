@@ -81,20 +81,35 @@ header.logged{
         position: relative;
         margin: 0;
         background:rgb(255, 255, 255);
-      }
-      h2{
-        padding:18px 30px 18px 15px;
-        color:rgb(48, 48, 48);
-        font-size:5vw;
-        font-weight:bold;
-        @media screen and (min-width: 500px) {
-          font-size: 30px;
+        h2{
+          width:90%;
+          padding:18px 0 18px 15px;
+          color:rgb(48, 48, 48);
+          font-size:5vw;
+          font-weight:bold;
+          @media screen and (min-width: 500px) {
+            font-size: 30px;
+          }
         }
-      }
-      .like-btn{
-        position: absolute;
-        top:16.65px;
-        right:10px;   
+        .like-btn{
+          display: flex;
+          align-items: center;
+          width:10%;
+          a{
+            display: inline-block;
+            span{
+              padding:18px 0;
+              font-size: 6vw;
+              @media screen and (min-width: 500px) {
+                font-size: 30px;
+              }
+            }
+          }
+         
+          // position: absolute;
+          // top:16.65px;
+          // right:10px;   
+        }
       }
     }
   }
