@@ -82,7 +82,7 @@ header.logged{
         margin: 0;
         background:rgb(255, 255, 255);
         h2{
-          width:90%;
+          width:89%;
           padding:15px 0 15px 3vw;
           line-height:7vw;
           color:rgb(48, 48, 48);
@@ -95,11 +95,11 @@ header.logged{
         .like-btn{
           display: flex;
           align-items: center;
-          width:10%;
+          width:11%;
           a{
             display: inline-block;
             span{
-              padding:15px 0;
+              padding:15px 0 15px 0;
               font-size: 7vw;
               @media screen and (min-width: 500px) {
                 font-size: 30px;
