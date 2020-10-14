@@ -84,3 +84,28 @@
   }
 }
 
+.question-wrapper{
+  
+  .question-container{
+    text-align: center;
+    .question-title{
+      h1{
+        padding:35px 20px;
+        font-weight:bold;
+        font-size:7.5vw;
+        @media screen and (min-width: 500px) {
+          font-size: 40px;
+        }
+      }
+      p,a{
+        margin:0 auto;
+        font-weight:600;
+        font-size:4.8vw;
+        @media screen and (min-width: 500px) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
