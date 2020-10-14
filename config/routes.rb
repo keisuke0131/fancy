@@ -23,4 +23,6 @@ Rails.application.routes.draw do
 
   get 'change_email/:id', to: 'change_email#edit', as: :change_email_edit
   post 'change_email/:id', to: 'change_email#update', as: :change_email_update
+
+  get '*path', controller: 'application', action: 'render_404'
 end
