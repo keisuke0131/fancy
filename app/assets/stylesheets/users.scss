@@ -114,6 +114,16 @@
       }
     }
   }
+  .users-new-btn{
+    text-align: center;
+    line-height:30px;
+    a{
+      font-weight:500;
+      font-size:1.05em;
+      text-decoration: underline;
+      color: rgb(22, 39, 94);
+    }
+  }
 }
 
 .users-setting-wrapper{
