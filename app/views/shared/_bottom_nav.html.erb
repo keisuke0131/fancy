@@ -12,6 +12,14 @@
         <p>お気に入り</p>
       <% end %>
     </li>
+    <% if current_user.admin %>
+      <li>
+        <%= link_to new_post_path do%>
+          <span class="material-icons">article</span>
+          <p>投稿</p>
+        <% end %>
+      </li>
+    <% end %>
     <li>
       <%= link_to setting_path do%>
         <span class="material-icons">app_settings_alt</span>

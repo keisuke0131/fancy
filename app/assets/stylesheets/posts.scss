@@ -42,18 +42,22 @@ header.logged{
     form{
       display: flex;
       flex-direction: column;
-      
+      padding:18px;
+      border:1px solid rgb(206, 206, 206);
       input{
-        height:30px;
+        height:35px;
         margin:0 0 15px 0;
         border:1px solid rgb(187, 187, 187);
       }
       textarea{
-        height:150px;
+        height:160px;
+        border:1px solid rgb(187, 187, 187);
       }
       input[type="submit"]{
+        display: inline-block;
         margin-top:20px;
         padding:5px 15px;
+        text-align: center;
       }
       label{
         margin-top:10px;
