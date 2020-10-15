@@ -1,0 +1,10 @@
+<h1>Fancy</h1>
+
+<p>Fancyへのご登録ありがとうございます、 <%= @user.name %>様,</p>
+
+<p>
+下のリンクからアカウントの有効化をお願い致します。
+</p>
+
+<%= link_to "Activate", edit_account_activation_url(@user.activation_token,
+                                                    email: @user.email) %>

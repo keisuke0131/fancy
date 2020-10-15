@@ -13,8 +13,10 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      log_in @user
-      redirect_to posts_path
+      # log_in @user
+      # redirect_to posts_path
+      @user.send_activation_email
+      redirect_to vaild_wait_url
     else
       render 'new'
     end
@@ -32,6 +34,9 @@ class UsersController < ApplicationController
   end
 
   def setting
+  end
+
+  def vaild_wait
   end
 
   private

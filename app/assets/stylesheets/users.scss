@@ -3,6 +3,31 @@
   margin:auto;
 }
 
+.flash{
+  position: absolute;
+  top:50px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  width:100%;
+  height:25px;
+  margin:auto;
+  padding:3px 0;
+  background:rgb(24, 26, 80);
+  color:rgb(255, 255, 255);
+  text-align: center;
+  animation: fadein-keyframes 2.3s ease-in 0s 1 forwards;
+  @keyframes fadein-keyframes {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
 .users-new-wrapper{
   min-height:100vh;
   margin:auto;
