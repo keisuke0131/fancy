@@ -50,7 +50,8 @@ class PasswordResetsController < ApplicationController
 
     def valid_user
       unless (@user && @user.activated? && @user.authenticated?(:reset, params[:id]))
-        redirect_to root_url
+        flash[:danger]="期限切れしています"
+        redirect_to password_resets_new_url
       end
     end
 
