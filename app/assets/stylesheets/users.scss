@@ -60,6 +60,13 @@
           }
         }
       }
+      a{
+        display: inline-block;
+        margin:15px 0 0 0;
+        color:rgb(4, 17, 199);
+        font-size:0.9em;
+        text-decoration: underline;
+      }
       input{
         height:45px;
         margin:20px 0 0 0;
@@ -115,6 +122,8 @@
     }
   }
   .users-new-btn{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     line-height:30px;
     a{

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'password_resets/new'
+  get 'password_resets/edit'
   get 'contacts', to: 'contacts#new'
   post 'contacts', to: 'contacts#create'
   get 'contacts/thanx', to: 'contacts#thanx'
@@ -18,6 +20,7 @@ Rails.application.routes.draw do
   end
   get '/setting', to: 'users#setting'
   get '/vaild_wait', to: 'users#vaild_wait'
+  
 
   get 'change_password/:id', to: 'change_password#edit', as: :change_password_edit
   post 'change_password/:id', to: 'change_password#update', as: :change_password_update
@@ -26,4 +29,8 @@ Rails.application.routes.draw do
   post 'change_email/:id', to: 'change_email#update', as: :change_email_update
 
   resources :account_activations, only: [:edit]
+  resources :password_resets,     only: [:new, :create, :edit, :update]
+  get '/reception', to: 'password_resets#reception'
+  get '/success', to: 'password_resets#success'
+
 end

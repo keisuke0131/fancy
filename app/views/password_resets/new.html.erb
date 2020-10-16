@@ -1,0 +1,15 @@
+<div class="users-new-wrapper">
+  <%= image_tag 'Fancy_logo_black.png'%>
+  <div class="users-new-container">
+    <%= form_with(url: password_resets_path, scope: :password_reset,local: true) do |f| %>
+      <div class="users-new-title">
+        <h1>パスワード再設定</h1>
+      </div>
+      <%= f.email_field :email, placeholder: "メールアドレス" %>
+      <%= f.submit "送信する", class: "btn-square-shadow" %>
+    <% end %>
+  </div>
+  <div class="users-new-btn">
+    <%= link_to "トップページ",root_path %>
+  </div>
+</div>

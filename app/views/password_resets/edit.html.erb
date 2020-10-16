@@ -1,0 +1,18 @@
+<div class="users-new-wrapper">
+  <%= image_tag 'Fancy_logo_black.png'%>
+  <div class="users-new-container">
+   <%= form_with(model: @user, url: password_reset_path(params[:id]),local: true) do |f| %>
+    <div class="users-new-title">
+      <h1>パスワード再設定</h1>
+    </div>
+      <%= render 'shared/error_messages' %>
+      <%= hidden_field_tag :email, @user.email %> 
+      <%= f.password_field :password, placeholder: "パスワード" %>
+      <%= f.password_field :password_confirmation , placeholder: "パスワード(確認)" %>
+      <%= f.submit "再設定する", class: "btn-square-shadow" %>
+    <% end %>
+  </div>
+  <div class="users-new-btn">
+    <%= link_to "トップページ",root_path %>
+  </div>
+</div>
