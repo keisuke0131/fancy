@@ -1,0 +1,22 @@
+<%= render 'shared/header_logged' %>
+
+<div class="users-setting-wrapper">
+  <div class="users-setting-container">
+    <ul>
+      <%= link_to new_post_path do%>
+        <li>
+          新規投稿
+          <span class="material-icons">navigate_next</span>
+        </li>
+      <% end %>
+      <%= link_to users_path do%>
+        <li>
+          会員情報
+          <span class="material-icons">navigate_next</span>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+<%= render 'shared/bottom_nav' %>

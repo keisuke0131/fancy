@@ -135,6 +135,28 @@
   }
 }
 
+.users-index-wrapper{
+  max-width:500px;
+  margin:0 auto 50px auto;
+  .users-index-container{
+    padding:30px 10px;
+    p{
+      padding:5px 0;
+      font-weight:bold;
+      font-size:1.25em;
+    }
+    .users{
+      margin:10px 0;
+      padding:10px;
+      border:1px solid rgb(209, 204, 204);
+      h2{
+        font-weight:500;
+        font-size:1.3em;
+      }
+    }
+  }
+}
+
 .users-setting-wrapper{
   margin:auto;
   .users-setting-container{

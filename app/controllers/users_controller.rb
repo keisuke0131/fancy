@@ -1,6 +1,10 @@
 class UsersController < ApplicationController
-  before_action :require_login , only:[:index,:show,:edit,:update,:destroy,:setting] 
+  before_action :require_login , only:[:index,:show,:edit,:update,:destroy,:setting,:admin] 
+  before_action :admin_check, only:[:index,:show,:edit,:update,:destroy,:admin]
+
   def index
+    @users = User.all
+    @users_activated = User.where(activated: true)
   end
 
   def show
@@ -37,6 +41,9 @@ class UsersController < ApplicationController
   end
 
   def vaild_wait
+  end
+
+  def admin
   end
 
   private

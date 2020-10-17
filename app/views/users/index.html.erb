@@ -1,2 +1,29 @@
-<h1>Users#index</h1>
-<p>Find me in app/views/users/index.html.erb</p>
+<div class="pc-wrap">
+  <%= render 'shared/header_logged' %>
+
+  <div class="users-index-wrapper">
+    <div class="users-index-container">
+      <p>有効会員数：<%=@users_activated.count%></p>
+      <p>総会員数(非認証)：<%=@users.count%></p>
+
+      <% @users.each do |user| %>
+        <div class="users">
+          <div class="posts-index-name">
+            <h2>ユーザ名：<%= user.name %></h2>
+            <h2>e-mail：<%= user.email %></h2>
+            <h2>有効化：
+              <% if user.activated %>
+                済
+              <% else %>
+                未
+              <% end %>
+            </h2>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>  
+
+  <%= render 'shared/bottom_nav' %>
+</div>
+

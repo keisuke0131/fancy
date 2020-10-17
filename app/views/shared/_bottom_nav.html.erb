@@ -14,9 +14,9 @@
     </li>
     <% if current_user.admin %>
       <li>
-        <%= link_to new_post_path do%>
-          <span class="material-icons">article</span>
-          <p>投稿</p>
+        <%= link_to admin_path do%>
+          <span class="material-icons">settings</span>
+          <p>管理画面</p>
         <% end %>
       </li>
     <% end %>
