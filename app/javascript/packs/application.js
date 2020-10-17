@@ -18,4 +18,4 @@ require('jquery')
 
 require("trix")
 require("@rails/actiontext")
-require('serviceworker-companion').start()
+require('../../assets/javascripts/serviceworker-companion')
