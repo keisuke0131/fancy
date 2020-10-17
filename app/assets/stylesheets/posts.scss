@@ -136,6 +136,15 @@ header.logged{
       font-size: 25px;
     }
   }
+  a{
+    position: absolute;
+    top:7px;
+    left:7px;
+    span{
+      color:rgb(20, 20, 20);
+      font-size:2.5em;
+    }
+  }
   img{
     width:100vw;
   }

@@ -1,5 +1,8 @@
 <!--<%= sanitize(@post.content) %>-->
 <div class="posts-show-thumbnail">
+  <%= link_to posts_path do %>
+    <span class="material-icons">navigate_before</span>
+  <% end %>
   <% if @post.image.attached? %>
     <%= image_tag @post.image %>
   <% else %>
