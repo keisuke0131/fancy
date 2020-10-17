@@ -18,6 +18,7 @@ gem "aws-sdk-s3", require: false
 gem 'mini_magick', '~> 4.8'
 gem 'dotenv-rails'
 gem 'meta-tags'
+gem 'serviceworker-rails'
 
 group :development, :test do
   gem 'sqlite3', '~> 1.4'
