@@ -1,5 +1,6 @@
+<%= render 'shared/header_logged' %>
+
 <div class="users-new-wrapper">
-  <%= image_tag 'Fancy_logo_black.png'%>
   <div class="users-new-container">
     <%= form_with(url: password_resets_path, scope: :password_reset,local: true) do |f| %>
       <div class="users-new-title">
