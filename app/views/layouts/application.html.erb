@@ -14,15 +14,10 @@
   </head>
 
   <body>
-
-    <div id="loader-bg" class="is-hide">
-      <div id="loader" class="is-hide">
-        <p>
-          <%= image_tag 'loading.png' %><br>
-          NOW LOADING
-        </p>
-      </div>
-    </div>
+<%# 
+    <div class="init">
+      <h1 class="loading">Now Loading...</h1>
+    </div> %>
     
     <% flash.each do |message_type, message| %>
       <div class="flash">
@@ -31,21 +26,5 @@
     <% end %>
     
     <%= yield %>
-
-    <script>
-      var bg = document.getElementById('loader-bg'),
-      loader = document.getElementById('loader');
-
-      bg.classList.remove('is-hide');
-      loader.classList.remove('is-hide');
-      window.addEventListener('load', stopload);
-
-      setTimeout('stopload()',1500);
-
-      function stopload(){
-          bg.classList.add('fadeout-bg');
-          loader.classList.add('fadeout-loader');
-      }
-    </script>
   </body>
 </html>
