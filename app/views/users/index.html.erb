@@ -4,7 +4,7 @@
   <div class="users-index-wrapper">
     <div class="users-index-container">
       <p>有効会員数：<%=@users_activated.count%></p>
-      <p>総会員数(非認証)：<%=@users.count%></p>
+      <p>総会員数(非認証を含む)：<%=@users.count%></p>
 
       <% @users.each do |user| %>
         <div class="users">
