@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fancy</title>
+  <style>
+    header.logged {
+      position: static;
+      margin: auto;
+      height: 50px;
+      border-bottom: 1px solid #cecece;
+      box-shadow: 0px 1px 1px 0px #f0f0f0;
+      background: white;
+    }
+    header.logged .header-icon {
+      width: 100%;
+      padding: 10px 7px;
+      text-align: center;
+    }
+    header.logged .header-icon img {
+      width: 95px;
+    }
+    header.logged .header-icon p {
+      padding: 3px 0 0 0;
+      color: black;
+      font-size: 1.4em;
+      font-weight: 500;
+    }
+    header.logged .login-btn {
+      display: flex;
+      justify-content: flex-end;
+    }
+    header.logged .login-btn a {
+      display: block;
+      width: 100vw;
+      line-height: 20px;
+      padding: 10px;
+      text-align: right;
+      font-size: 0.8em;
+    }
+
+    nav.bottom-nav {
+      margin: auto;
+      text-align: center;
+    }
+    nav.bottom-nav ul {
+      display: flex;
+      position: fixed;
+      bottom: 0;
+      z-index: 2;
+      width: 100vw;
+      box-shadow: 1px 1px 1px 1px #c7c7c7;
+      background: #fff;
+    }
+    nav.bottom-nav ul li {
+      width: 33.33%;
+      padding: 8px 10px;
+      border-top: 1px solid #cecece;
+    }
+    nav.bottom-nav ul p {
+      font-size: 0.6em;
+    }
+  </style>
+</head>
+<body>
+  <header class="logged">
+    <div class="header-icon">
+      <img src="./app/assets/images/Fancy_logo_black.png" alt="">
+    </div>
+  </header>
+
+  <nav class="bottom-nav">
+  <ul>
+    <li>
+      <a href="#">
+        <span class="material-icons">home</span>
+        <p>ホーム</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <span class="material-icons">star</span>
+        <p>お気に入り</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <span class="material-icons">app_settings_alt</span>
+        <p>設定</p>
+      </a>
+    </li>
+  </ul>
+</nav>
+</body>
+</html>
