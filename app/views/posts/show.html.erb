@@ -1,13 +1,21 @@
 <!--<%= sanitize(@post.content) %>-->
 <div class="posts-show-thumbnail">
-  <%= link_to posts_path do %>
+  <%= link_to posts_path  ,{class: 'left'} do %>
     <span class="material-icons">navigate_before</span>
   <% end %>
+
+  <% if current_user.admin %>
+    <%= link_to edit_post_path ,{class: 'right'} do %>
+      <span class="material-icons">create</span>
+    <% end %>
+  <% end %>
+
   <% if @post.image.attached? %>
     <%= image_tag @post.image %>
   <% else %>
     <%= image_tag 'thumbnail.png' %>
   <% end %>
+
   <h1><%= @post.title%></h1>
 </div>
 <%= @post.content.html_safe %>
