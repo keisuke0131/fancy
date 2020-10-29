@@ -5,11 +5,11 @@ RSpec.describe PostsController, type: :controller do
     include SessionsHelper
     before do
       @user = User.new(
-        name: "foo",
-        email: "foo@foo.com",
-        password: "foo1234",
-        password_confirmation: "foo1234",
-        admin: true,
+        name: "sample_user",
+        email: "sample@sample.com",
+        password: "fancy0714",
+        password_confirmation: "fancy0714",
+        admin: false,
         activation_digest: "$2a$12$jNbVBjaz0aRD5mY/di.2m.CFTBbBNllu/EOY45/dVtvCz4lyX.5Xi",
         activated: true,
         activated_at: "2020-10-15 02:32:43"

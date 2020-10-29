@@ -6,15 +6,12 @@
     <div class="users-new-title">
       <h1>新規投稿</h1>
     </div>
-      <%= f.text_field :tilte, placeholder: "タイトル" %>
-      <%= f.file_field :image,placeholder: "サムネイル" %>
-      <%= f.text_area:content,placeholder: "コンテンツ" %>
-      <%= f.submit "投稿する", class: "btn-square-shadow" %>
+    <%= f.text_field :title, placeholder: "タイトル" %>
+    <%= f.file_field :image,placeholder: "サムネイル" %>
+    <%= f.text_area:content,placeholder: "コンテンツ" %>
+    <%= f.submit "投稿する", class: "btn-square-shadow" %>
     <% end %>
   </div>
 </div>
 
 <%= render 'shared/bottom_nav' %>
-
-
-
