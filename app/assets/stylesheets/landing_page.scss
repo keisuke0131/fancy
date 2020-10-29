@@ -44,6 +44,26 @@ main{
     transition: none;
     background:#16275e;
   }
+  .balloon {
+    position: relative; 
+    width: 200px;
+    margin:10px auto 0;
+    padding: 10px;
+    border-radius:15px;
+    background: rgb(243, 240, 240);
+    font-weight: bold;
+    font-size:0.75em;
+    text-align: center; 
+  }
+  .balloon::before {
+    content: '';
+    position: absolute; 
+    bottom: -20px;
+    left: 50%;
+    margin-left: -10px; 
+    border: 10px solid transparent; 
+    border-top-color: rgb(243, 240, 240);
+  }
   .btn-square-shadow {
     position: relative;
     text-align: center;
@@ -74,7 +94,9 @@ main{
   .about-wrapper{
     background: rgb(249, 249, 253);
     color:rgb(36, 36, 36);
-    
+    img{
+      width:100%;
+    }
     .about-container{
       width:90%;
       margin: auto;
@@ -123,3 +145,4 @@ footer{
   margin:auto;
   padding:20px 0;
 }
+
