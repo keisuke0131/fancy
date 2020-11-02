@@ -25,7 +25,7 @@
   </header>
   <main>
     <div class="top-wrapper">
-      <%= image_tag 'lp.png' %>
+      <%= image_tag 'lp2.png' %>
       <div class="top-container">
       <div class="balloon">今なら月額料金が無料！</div>
         <%= link_to new_user_path do%>
@@ -33,55 +33,80 @@
         <% end %>
       </div>
     </div>
-    <div class="about-wrapper">
+    
+    <div class="about-wrapper first">
       <div class="about-container">
         <div class="about-title">
           <h2>彼女ができない理由は明白</h2>
         </div>
-          <p>あなたに彼女ができない理由、</p>
-          <p>それは<span class="marker-under">「行動してない」</span>からです。</p>
-          <p>と言われてもどんな行動をすればいいのかわからないですよね...。</p>
-          <p>なんならほとんどの人は、その事実に気づいていながら彼女ができないと悩んでいるのではないでしょうか？</p>
-          <p>急にナンパをしたり、マッチングアプリに登録して行動したとしても、</p>
-          <p>とてもじゃないけど彼女ができるとは思えないですよね（笑）。</p>
-          <p>そんなあなたのためにFancyでは彼女を作るために必要なノウハウを全て解説しています。</p>
-          <p>Fancyではあなたが<span class="marker-under">適切な行動をできるように徹底的にサポート</span>します。</p>
-          <p><span class="marker-under">最短経路で最高の彼女をゲットしたい人は登録必須です！</span></p>
-      </div>
-      <div class="about-container">
-        <div class="about-title">
-          <h2>彼女を作ることは誰でもできる</h2>
-        </div>
-          <p><span class="marker-under">これは断言できます！</span></p>
-          <p>Fancyを運営している私も、今では長く付き合っている彼女が居ますが、</p>
-          <p>元々は全然モてるようなタイプではありませんでした。</p>
-          <p>思春期の頃は周りの恋バナにも全然ついていけない、話題が恋愛になった瞬間に会話の輪から外れるしかありませんでした。</p>
-          <p>そんな私でもある日を境に行動することでいとも簡単に彼女を作ることができたんです！</p>
-          <p>その彼女とは今でも付き合っています。</p>
-          <p>なので私は<span class="marker-under">彼女を作るということは絶対に誰でもできると確信してます！</span></p>
-      </div>
-      <div class="about-container">
-        <div class="about-title">
-          <h2>彼女作りは再現性が高い</h2>
-        </div>
-          <p>そもそも彼女を作ることが難しかったら、</p>
-          <p>人類は絶滅していると思いませんか？</p>
-          <p>彼女を作るということが難しいことであれば、</p>
-          <p>地球の人口が増え続けるなんてこともないと思います。</p>
+          <p>あなたにいつまで経っても彼女ができない理由は明白です。</p>
+          <p>それは<span class="marker-under">「正しく行動してない」</span>からです。</p>
+          <p>彼女を作るなんて正しい行動を積み重ねていけばいとも簡単にできてしまうものです。</p>
           <p>今では日本では晩婚化とか、生涯未婚の人の割合も増えてきていますが、</p>
           <p>半世紀ほど前だと生涯未婚の割合はたった2％だったそうです。</p>
-          <p>結婚で98％だったら、<span class="marker-under">彼女を作るなんて99.9％くらいの人はできる</span>はずです！</p>
-          <p>彼女を作るのは誰でもできるというのは、</p>
-          <p>私個人の体験だけでなく、</p>
-          <p><span class="marker-under">事実として証明されている</span>ものなんです！</p>
+          <p>結婚で98％だったら、<span class="marker-under">彼女を作るなんて99.9％の人はできる</span>はずです！</p>
+          <p>そもそも一部の人しかできないようなことであればそもそも人類はここまで増えなかったはずです。</p>
+          <p>とは言っても「正しい行動」が何なのかなんてわからないですよね？</p>
+          <p>Googleで「彼女 欲しい」と検索しても、マッチングアプリばっか出てきて、登録しても彼女ができる気配すらない。</p>
+          <p>そんな人も多いのではないでしょうか？</p>
+          <p>そんな人たちのために僕はFancyを作ることを決めました。</p>
+          <p>Fancyでは「正しい行動」をできるようなノウハウを徹底的に解説し、<span class="marker-under">最短経路で彼女を作るためのサポート</span>をしています。</p>
       </div>
       <div class="btn-container">
         <div class="balloon">今なら月額料金が無料！</div>
-        <%= link_to new_user_path do%>
-          <button class="btn-square-shadow">新規登録はこちら！</button>
-        <% end %>
+          <%= link_to new_user_path do%>
+            <button class="btn-square-shadow">新規登録はこちら！</button>
+          <% end %>
       </div>
     </div>
+
+    <div class="about-wrapper second">
+        <div class="about-container">
+          <div class="about-title">
+            <h2>Fancyの3つのメリット</h2>
+          </div>
+
+          <h3>1. 再現性の高いノウハウ</h3>
+          <div class="content">
+            <%= image_tag 'frame.png' %>
+            <div>
+            <p>1記事10～15分程度で読めて再現性の高いノウハウを提供します。
+            <p>「道端でナンパしまくる」とか、「整形してイケメンになる」みたいな非現実的なアクションは一切提示しません。</p>
+            </div>
+          </div>
+
+          <h3>2. 運営にチャットで相談</h3>
+          <div class="content">
+          <%= image_tag 'frame2.png' %>
+            <div>
+              <p>実際に行動していてわからなかったことなどを運営にLINEで相談することができます</p>
+              <p>デートプランの添削や、告白のタイミングの相談など是非ご相談ください。</p>
+            </div>
+          </div>
+
+          <h3>3. 彼女ができてからもサポート</h3>  
+          <div class="content">
+            <p>彼女を作ることより、彼女ができてからのほうが遥かに大変です。Fancyでは彼女ができてからの悩みごとの相談や、彼女がいる人向けのコンテンツも現在制作中です。</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="about-wrapper third">
+      <div class="about-container">
+        <div class="about-title">
+          <h2>価格</h2>
+        </div>
+        <p class="price">1000円/月</p>
+      </div>
+
+      <div class="btn-container">
+        <div class="balloon">今なら月額料金が無料！</div>
+          <%= link_to new_user_path do%>
+            <button class="btn-square-shadow">新規登録はこちら！</button>
+          <% end %>
+      </div>
+    </div>
+      
   </main>
   <footer>
     <small>
