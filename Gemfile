@@ -21,7 +21,9 @@ gem 'meta-tags'
 gem 'serviceworker-rails'
 
 group :development, :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '4.0.0.beta3'
+  gem "factory_bot_rails"
+  gem 'database_cleaner'
   gem 'sqlite3', '~> 1.4'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end

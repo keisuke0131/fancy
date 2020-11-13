@@ -16,13 +16,13 @@ RSpec.describe User, type: :model do
 
     describe "間違ったユーザー情報" do
       it "名前が無い" do
-        bar = User.new(email: "bar", password: "bar1234")
+        bar = User.new(email: "bar@bar.com", password: "bar1234")
         expect(bar.valid?).to eq false
       end
   
       it "名前が長すぎる" do
         bar_name= "a" * 51
-        bar = User.new(name: bar_name , email: "bar", password: "bar1234")
+        bar = User.new(name: bar_name , email: "bar@bar.com", password: "bar1234")
         expect(bar.valid?).to eq false
       end
     
@@ -32,8 +32,7 @@ RSpec.describe User, type: :model do
       end
   
       it "パスワードが短い" do
-        bar_name= "a" * 51
-        bar = User.new(name: bar_name , email: "bar", password: "1234")
+        bar = User.new(name: "bar" , email: "bar@bar.com", password: "1234")
         expect(bar.valid?).to eq false
       end
     end

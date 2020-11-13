@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   resources :posts, except:[:index]
   get '/index/:id', to: 'posts#index'
   get '/likes', to: 'posts#likes'
-  get '/steps', to: 'posts#steps'
+  get '/steps', to: 'posts#steps',as: :posts_steps
   
   get    '/login',  to: 'sessions#new'
   post    '/login' , to: 'sessions#create'

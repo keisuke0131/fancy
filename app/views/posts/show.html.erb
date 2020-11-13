@@ -1,6 +1,6 @@
 <!--<%= sanitize(@post.content) %>-->
 <div class="posts-show-thumbnail">
-  <%= link_to posts_path  ,{class: 'left'} do %>
+  <%= link_to "/index/#{@post.step}"  ,{class: 'left'} do %>
     <span class="material-icons">navigate_before</span>
   <% end %>
 

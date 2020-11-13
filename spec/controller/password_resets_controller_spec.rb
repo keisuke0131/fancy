@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe UsersController, type: :controller do
-  describe "user" do
+RSpec.describe PasswordResetsController, type: :controller do
+  describe "password_resets" do
     include SessionsHelper
     let(:user) { 
       User.create(
@@ -32,50 +32,26 @@ RSpec.describe UsersController, type: :controller do
       end
     end
 
-    describe "#index" do
+    describe "#reception" do
       it "正常なレスポンス" do
-        get :index
+        get :reception
         expect(response).to be_successful
       end
 
       it "200レスポンス" do
-        get :index
+        get :reception
         expect(response).to have_http_status "200"
       end
     end
 
-    describe "#setting" do
+    describe "#success" do
       it "正常なレスポンス" do
-        get :setting
+        get :success
         expect(response).to be_successful
       end
 
       it "200レスポンス" do
-        get :setting
-        expect(response).to have_http_status "200"
-      end
-    end
-
-    describe "#vaild_wait" do
-      it "正常なレスポンス" do
-        get :vaild_wait
-        expect(response).to be_successful
-      end
-
-      it "200レスポンス" do
-        get :vaild_wait
-        expect(response).to have_http_status "200"
-      end
-    end
-
-    describe "#admin" do
-      it "正常なレスポンス" do
-        get :admin
-        expect(response).to be_successful
-      end
-
-      it "200レスポンス" do
-        get :admin
+        get :success
         expect(response).to have_http_status "200"
       end
     end

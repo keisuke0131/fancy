@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe UsersController, type: :controller do
-  describe "user" do
+RSpec.describe ContactsController, type: :controller do
+  describe "contacts" do
     include SessionsHelper
     let(:user) { 
       User.create(
@@ -19,7 +19,7 @@ RSpec.describe UsersController, type: :controller do
     before do
       log_in(user)
     end
-
+    
     describe "#new" do
       it "正常なレスポンス" do
         get :new
@@ -32,50 +32,38 @@ RSpec.describe UsersController, type: :controller do
       end
     end
 
-    describe "#index" do
+    describe "#privacy_policy" do
       it "正常なレスポンス" do
-        get :index
+        get :privacy_policy
         expect(response).to be_successful
       end
 
       it "200レスポンス" do
-        get :index
+        get :privacy_policy
         expect(response).to have_http_status "200"
       end
     end
 
-    describe "#setting" do
+    describe "#question" do
       it "正常なレスポンス" do
-        get :setting
+        get :question
         expect(response).to be_successful
       end
 
       it "200レスポンス" do
-        get :setting
+        get :question
         expect(response).to have_http_status "200"
       end
     end
 
-    describe "#vaild_wait" do
+    describe "#thanx" do
       it "正常なレスポンス" do
-        get :vaild_wait
+        get :thanx
         expect(response).to be_successful
       end
 
       it "200レスポンス" do
-        get :vaild_wait
-        expect(response).to have_http_status "200"
-      end
-    end
-
-    describe "#admin" do
-      it "正常なレスポンス" do
-        get :admin
-        expect(response).to be_successful
-      end
-
-      it "200レスポンス" do
-        get :admin
+        get :thanx
         expect(response).to have_http_status "200"
       end
     end

@@ -7,7 +7,7 @@ class ChangeEmailController < ApplicationController
     @user = User.find(params[:id])
     if @user.update(update_params)
       flash[:success] = "メールアドレスを変更しました"
-      redirect_to posts_path
+      redirect_to posts_steps_path
     else
       render 'edit'
     end

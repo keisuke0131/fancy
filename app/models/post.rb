@@ -5,7 +5,7 @@ class Post < ApplicationRecord
 
   validates :title, presence: true
   validates :content, presence: true
-
+  validates :step, presence: true
 
   def liked_by?(user)
     likes.where(user_id: user.id).exists?

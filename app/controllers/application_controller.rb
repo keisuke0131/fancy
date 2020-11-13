@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
     
     def before_login
       if logged_in?
-        redirect_to posts_path
+        redirect_to posts_steps_path
       end
     end
   

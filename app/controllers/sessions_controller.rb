@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
         log_in user
         flash[:success] = "ログインしました"
         params[:session][:remember_me] == '1' ? remember(user) : forget(user)
-        redirect_to posts_path
+        redirect_to posts_steps_path
       else
         message  = "Account not activated. "
         message += "Check your email for the activation link."

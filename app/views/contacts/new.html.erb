@@ -6,9 +6,9 @@
     <div class="users-new-title">
       <h1>お問い合わせ</h1>
     </div>
-      <%= f.text_field :name, placeholder: "氏名" %>
-      <%= f.email_field :email, placeholder: "メールアドレス" %>
-      <%= f.text_area :message, placeholder: "お問い合わせ内容" %>
+      <%= f.text_field :name, placeholder: "氏名" ,id: 'contact_name' %>
+      <%= f.email_field :email, placeholder: "メールアドレス" ,id: 'contact_email' %>
+      <%= f.text_area :message, placeholder: "お問い合わせ内容" ,id: 'contact_message'%>
       <%= f.submit "送信する", class: "btn-square-shadow" %>
     <% end %>
   </div>

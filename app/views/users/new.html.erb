@@ -8,11 +8,11 @@
     
       <%= render 'shared/error_messages' %>
 
-      <%= f.text_field :name, placeholder: "氏名" %>
-      <%= f.email_field :email, placeholder: "メールアドレス" %>
-      <%= f.password_field :password, placeholder: "パスワード" %>
-      <%= f.password_field :password_confirmation , placeholder: "パスワード(確認)" %>
-      <%= f.submit "登録する", class: "btn-square-shadow" %>
+      <%= f.text_field :name, placeholder: "氏名" ,id: 'user_name' %>
+      <%= f.email_field :email, placeholder: "メールアドレス" ,id: 'user_email' %>
+      <%= f.password_field :password, placeholder: "パスワード",id: 'user_password' %>
+      <%= f.password_field :password_confirmation , placeholder: "パスワード(確認)" ,id: 'user_password_confirmation'  %>
+      <%= f.submit "登録する", class: "btn-square-shadow"%>
     <% end %>
   </div>
   <div class="users-new-btn">

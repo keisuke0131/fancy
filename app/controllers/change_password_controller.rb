@@ -8,9 +8,9 @@ class ChangePasswordController < ApplicationController
      if @user == @user.authenticate(params[:current_password])
       @user.update(update_params)
       flash[:success] = "パスワードを変更しました"
-      redirect_to posts_path
+      redirect_to posts_steps_path
     else
-        redirect_to likes_path
+      render 'edit'
     end
   end
 

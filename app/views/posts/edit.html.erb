@@ -6,13 +6,14 @@
       <div class="users-new-title">
         <h1>投稿編集</h1>
       </div>
-        <%= f.text_field :title, placeholder: "タイトル" %>
-        <%= f.file_field :image,placeholder: "サムネイル" %>
-        <%= f.text_area:content,placeholder: "コンテンツ" %>
+      <%= f.text_field :title, placeholder: "タイトル" ,id: "post_title" %>
+      <%= f.text_field :step, placeholder: "ステップ" ,id: "post_step" %>
+      <%= f.file_field :image,placeholder: "サムネイル" ,id: "post_image" %>
+      <%= f.text_area:content,placeholder: "コンテンツ"  ,id: "post_content" %>
         <%= f.submit "投稿する", class: "btn-square-shadow" %>
       <% end %>
         <div class="users-new-btn">
-        <%= link_to "削除",post_path,method: :delete %>
+        <%= link_to "削除",post_path,id: "delete_btn",method: :delete %>
       </div>
     </div>
 </div>

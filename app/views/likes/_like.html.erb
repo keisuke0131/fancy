@@ -1,9 +1,9 @@
 <% if post.liked_by?(current_user) %>
-   <%= link_to post_add_path(post), method: :delete, remote: true, id: :"like-button-#{post.id}" do %>
+   <%= link_to post_add_path(post), method: :delete, remote: true, id: :"like-button-#{post.id}" ,class: "like_btn" do %>
       <span class="material-icons">star</span>
    <% end %>
 <% else %>
-   <%= link_to post_add_path(post), method: :post, remote: true, id: :"like-button-#{post.id}" do %>
+   <%= link_to post_add_path(post), method: :post, remote: true, id: :"like-button-#{post.id}",class: "like_btn" do %>
       <span class="material-icons">star_border</span>
    <% end %>
 <% end %>

@@ -3,30 +3,12 @@
 
       <div class="post-step-content">
         <% num = 1 %>
-        <% while num < 8 do %>
+        <% while num <= 8 do %>
           <%= link_to "/index/#{num}" do %>
             <%= image_tag "step#{num}.png" %>
           <% end %>
           <% num += 1%>
         <% end %>
-        <!-- <%= link_to posts_path(2) do %>
-          <%= image_tag 'step2.png' %>
-        <% end %>
-        <%= link_to posts_path(3) do %>
-          <%= image_tag 'step3.png' %>
-        <% end %>
-        <%= link_to posts_path(4) do %>
-          <%= image_tag 'step4.png' %>
-        <% end %>
-        <%= link_to posts_path(5) do %>
-          <%= image_tag 'step5.png' %>
-        <% end %>
-        <%= link_to posts_path(6) do %>
-          <%= image_tag 'step6.png' %>
-        <% end %>
-        <%= link_to posts_path(7) do %>
-          <%= image_tag 'step7.png' %>
-        <% end %> -->
       </div>
 
 

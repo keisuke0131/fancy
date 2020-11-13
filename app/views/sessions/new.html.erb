@@ -5,9 +5,9 @@
       <div class="users-new-title">
         <h1>ログイン</h1>
       </div>
-      <%= f.email_field :email, class: 'form-control', placeholder: "メールアドレス" %>
-      <%= f.password_field :password, class: 'form-control', placeholder: "パスワード" %>
-      <%= f.submit "ログイン", class: "btn btn-primary" %>
+      <%= f.email_field :email, class: 'form-control', placeholder: "メールアドレス" ,id: 'session_email' %>
+      <%= f.password_field :password, class: 'form-control', placeholder: "パスワード" ,id: 'session_password'%>
+      <%= f.submit "ログイン", class: "btn btn-primary"%>
     <% end %>
   </div>
   <div class="users-new-btn">

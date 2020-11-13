@@ -1,27 +1,27 @@
 <nav class="bottom-nav">
   <ul>
     <li>
-      <%= link_to posts_path do%>
+      <%= link_to posts_steps_path ,value: 'home_tab' do%>
         <span class="material-icons">home</span>
         <p>ホーム</p>
       <% end %>
     </li>
     <li>
-      <%= link_to likes_path do%>
+      <%= link_to likes_path ,value: 'like_tab' do%>
         <span class="material-icons">star</span>
         <p>お気に入り</p>
       <% end %>
     </li>
     <% if current_user.admin %>
       <li>
-        <%= link_to admin_path do%>
+        <%= link_to admin_path ,value: 'admin_tab' do%>
           <span class="material-icons">settings</span>
           <p>管理画面</p>
         <% end %>
       </li>
     <% end %>
     <li>
-      <%= link_to setting_path do%>
+      <%= link_to setting_path ,value: 'setting_tab' do%>
         <span class="material-icons">app_settings_alt</span>
         <p>設定</p>
       <% end %>
